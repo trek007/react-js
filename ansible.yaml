@@ -2,7 +2,7 @@
   become: true
   tasks:
     - name: create new deployment
-      command: kubectl apply -f /home/azureuser/deployment.yaml
+      command: kubectl apply -f /home/azureuser/deployment.yaml --validate=false
     - name: create new service
-      command: kubectl apply -f /home/azureuser/service.yaml
+      command: kubectl apply -f /home/azureuser/service.yaml --validate=false
   
